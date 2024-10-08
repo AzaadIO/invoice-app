@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Vazirmatn';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/vazirmatn/files/vazirmatn-arabic-wght-normal.woff2) format('woff2-variations');
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -54,6 +63,10 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
+  }
+
+  .rtl {
+    direction: rtl;
   }
 }
 @layer base {
